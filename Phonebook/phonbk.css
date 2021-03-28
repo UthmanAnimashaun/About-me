@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #000011;
+    color: #666;
+}
+.back-to-home-button{
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    background: transparent;
+    color: #00ff00;
+    border-bottom: 1px solid #00ff00;
+    border-top: 1px solid #ff00ff;
+    border-left: 1px solid #0000ff;
+    border-right: 1px solid #00f0f0f0;
+    animation: animate 3s linear infinite;
+
+}
+.back-to-home-button a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Phonebook Container*/
+
+#container div{
+    display: inline-block;
+    font-family: algerian;
+    font: 50px;
+    margin-bottom: 10px;;
+    margin-top: 10px;;
+    color: #666;
+    
+}
+
+#div1{
+position: relative;
+animation: rotate 3s linear 1s  alternate, rotate2 5s linear 12s  alternate;
+}
+
+#div2{
+position: relative;
+animation: rotate 3s linear 1.5s  alternate, rotate2 5s linear 12s  alternate;
+}
+
+#div3{
+position: relative;
+animation: rotate 3s linear 2s  alternate, rotate2 5s linear 12s  alternate;
+}
+
+#div4{
+position: relative;
+animation: rotate 3s linear 2.5s  alternate, rotate2 5s linear 12s  alternate;
+}
+
+#div5{
+position: relative;
+animation: rotate 3s linear 3s  alternate, rotate2 5s linear 12s  alternate;
+
+}
+#div6{
+position: relative;
+animation: rotate 3s linear 3.5s  alternate, rotate2 5s linear 12s  alternate;
+
+}
+#div7{
+position: relative;
+animation: rotate 3s linear 4s  alternate, rotate2 5s linear 12s  alternate;
+
+}
+#div8{
+position: relative;
+animation: rotate 3s linear 4.5s  alternate, rotate2 5s linear 12s  alternate;
+
+}
+#div9{
+position: relative;
+animation: rotate 3s linear 5s  alternate, rotate2 5s linear 12s  alternate;
+
+}
+#div10{
+position: relative;
+animation: rotate 3s linear 5.5s  alternate, rotate2 5s linear 12s  alternate;
+
+}
+#div11{
+position: relative;
+animation: rotate 3s linear 6s  alternate, rotate2 5s linear 12s  alternate;
+
+}
+#div12{
+position: relative;
+animation: rotate 3s linear 6.5s  alternate, rotate2 5s linear 12s  alternate;
+
+}
+#div13{
+position: relative;
+animation: rotate 3s linear 7s  alternate, rotate2 5s linear 12s  alternate;
+
+}
+#div14{
+position: relative;
+animation: rotate 3s linear 7.5s  alternate, rotate2 5s linear 12s  alternate;
+
+}
+#div15{
+position: relative;
+animation: rotate 3s linear 8s  alternate, rotate2 5s linear 12s  alternate;
+
+}
+#div16{
+position: relative;
+animation: rotate 3s linear 8.5s  alternate, rotate2 5s linear 12s  alternate;
+
+}
+
+/* Phonebook text Animation (1st Animation)*/
+@keyframes rotate{
+0%{
+left: 0px;
+color: #00ff00;
+}
+25%{
+left: 100px;
+color: orange;
+
+}
+
+50%{
+left: 200px;
+color: blue;
+
+}
+75%{
+left:360px;
+color: #00ffff;
+
+}
+100%{
+left: 0px;
+color: #777;
+
+}
+}
+
+
+/* Phonebook text Animation (2nd Animation)*/
+@keyframes rotate2{
+0%{
+color: #00ff00;
+}
+
+25%{
+color: orange;
+
+}
+
+50%{
+color: blue;
+
+}
+75%{
+color: #00ffff;
+
+}
+100%{
+color: #777;
+
+}
+}
+
+
+#myinput{
+    background: url(searching.png);
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #00ff00;
+    border-top: 1px solid #ff00ff;
+    border-left: 1px solid #0000ff;
+    border-right: 1px solid #00f0f0f0;
+    width: 100%;
+    color: #666;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    margin-bottom: 12px;
+    animation: animate 3s linear infinite;
+}
+
+/* Input Animation*/
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+        
+    }
+    100%{
+        filter: hue-rotate(360deg);
+        
+    }
+
+}
+#myul{
+    list-style-type: none;           
+    padding: 0;
+    margin: 0;
+}
+
+#myul li a {
+    background: #000022;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #666;
+    display: block;
+}
+#myul li a:hover:not(.header) {
+    background: #011;
+    color: #00ff00;
+    border-bottom: 1px solid #00ff00;
+
+}

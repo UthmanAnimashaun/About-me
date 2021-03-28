@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000022;
+    color: #555;
+}
+.nav-background{
+    background: #222; 
+    color: #fff;
+}
+.body-of-footer-modal{
+    background: #333;
+}
+.background-modal{
+    background: #000022;
+}
+.head-of-modal{
+    background: #444;
+    color: #00ff00;
+}
+.card-background-color{
+    background: #000044;
+}
+
+/* Top center Image and Text */
+.img-span{
+    display: flex;
+    flex-direction: row;
+}
+.img-span:before, .img-span:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #00ff00;
+    margin: auto;
+ }
+
+ .modal-button{
+    text-align: center;
+    width: 100%;
+}
+.img-center{
+    margin-top: 25px;
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+
+}.span-txt1{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s alternate ;
+
+}
+.span-txt2{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 0.5s alternate  ;
+
+}
+.span-txt3{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 1s alternate ;
+
+}
+.span-txt4{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 1.5s alternate ;
+
+}
+.span-txt5{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 2s alternate ;
+
+}
+.span-txt6{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 2.5s alternate ;
+
+}
+.span-txt7{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 3s alternate ;
+
+}
+.span-txt8{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 3.5s alternate ;
+
+}
+.span-txt9{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 4s alternate ;
+
+}
+.span-txt10{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 4.5s alternate ;
+
+}
+.span-txt11{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 5s alternate ;
+
+}
+.span-txt12{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 5.5s alternate ;
+
+}
+.span-txt13{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 6s alternate ;
+
+}
+.span-txt14{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 6.5s alternate ;
+
+}
+.span-txt15{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 7s alternate ;
+
+}
+.span-txt16{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 7.5s alternate ;
+
+}
+.span-txt17{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 8s alternate ;
+
+}
+.span-txt18{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 8.5s alternate ;
+
+}
+.span-txt19{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 9s alternate ;
+
+}
+.span-txt20{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 9.5s alternate ;
+
+}
+.span-txt21{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 10s alternate ;
+
+}
+.span-txt22{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 10.5s alternate ;
+
+}
+.span-txt23{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 11s alternate ;
+
+}
+.span-txt24{
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #00ff00;
+    font-family: joker;
+    animation: animate 1s linear 11.5s alternate ;
+    transition: width 2s, height 2s, transform 2s;
+    transform: rotate(360deg);
+
+}
+
+@keyframes animate{
+    0%{
+        bottom: 0px;
+        color: #00ff00;
+    }
+   
+    50%{
+        bottom: 10px;
+        color: #00ff00;
+    }
+    100%{
+        bottom: 0px;
+        color: #00ff00;
+    }
+ }
+
+.about .about-text{
+    margin-left: 5px;
+    color: #777;
+}
+.about .about-text{
+    display: flex;
+    flex-direction: row;
+}
+.about .about-text:before, .about .about-text:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #00ff00;
+    margin: auto;
+}
+
+/* All Button Center */
+.all-button-center button{
+    text-align: center;
+}
+
+/* get-intouch-form */
+.get-intouch-form{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background: transparent;
+    border: 2px solid #00ff00;
+    color: #777;
+}
+
+.get-intouch-message{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    flex: 1;
+    background: transparent;
+    border: 2px solid #00ff00;
+    color: #777;
+}
+.get-intouch-form-button{
+    text-align: center;
+}
+/* Footer */
+.footer{
+    text-align: center;
+}
+/* Footer Social Media Logo */
+.span1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: auto;
+    /* margin-right: 40px; */
+}
