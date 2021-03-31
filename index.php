@@ -287,16 +287,31 @@
   </main>  <!--/.container -->
 
   <footer class="footer">
-      <div class="mb-3">
-        <span class="m-3"><img src="img/ig.jpg" class="span1" alt=""></span>
-        <span class="m-3"><img src="img/facebook.jpg" class="span1" alt=""></span>
-        <span class="m-3"><img src="img/twitter.png" class="span1" alt=""></span>
-        <span class="m-3"><img src="img/whatsapp.jpg" class="span1" alt=""></span>
-        <span class="m-3"><img src="img/snapChat.png" class="span1" alt=""></span>
+  <div class="row">
+        <div class="col mb-3">
+       <a href="https://www.instagram.com/animashaun_uthman_akorede">
+       <img src="img/ig.jpg" class="span1" alt="">
+       </a> 
+        </div>
+        
+        <div class="col mb-3">
+            <a href="https://wa.me/+2348128335797">
+            <img src="img/whatsapp.jpg" class="span1" alt="">
+            </a> 
+        </div>
+        
+        <div class="col mb-3">
+             <img src="img/twitter.png" class="span1" alt="">
+        </div>
+        
+        <div class="col mb-3">
+          <a href="https://www.facebook.com/monikkaa23"><img src="img/facebook.jpg" class="span1" alt=""></a>
+        </div>
      </div>
-      
       <p class="lead"> &copy; Designed & Built By Uthman Animashaun</p>
+
   </footer>
+      
       
          
     <!-- </header> -->
