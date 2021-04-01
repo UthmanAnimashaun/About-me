@@ -90,7 +90,7 @@
                               <button type="button" class="btn-close btn-outline-info" data-bs-dismiss="modal" aria-label="Close">&times;</button>
                             </div>
                             <div class="modal-body  background-modal">
-                              <form action="login.php" method="POST" class="form-row">
+                              <form action="" method="POST" class="form-row">
                                   <label for="">First Name</label>
                                   <input type="text" name="first_name" class="get-intouch-form mb-3 input" placeholder="First Name" required>
                                   <label for="">Last Name</label>
