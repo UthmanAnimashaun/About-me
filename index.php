@@ -90,7 +90,7 @@
                               <button type="button" class="btn-close btn-outline-info" data-bs-dismiss="modal" aria-label="Close">&times;</button>
                             </div>
                             <div class="modal-body  background-modal">
-                              <form action="" method="POST" class="form-row">
+                              <form action="index.php" method="POST" class="form-row">
                                   <label for="">First Name</label>
                                   <input type="text" name="first_name" class="get-intouch-form mb-3 input" placeholder="First Name" required>
                                   <label for="">Last Name</label>
@@ -100,7 +100,7 @@
                                   <label for="">Password</label>
                                   <input type="password" name="password" class="get-intouch-form mb-3 input" placeholder="Password" required>
                                   <div class="modal-button">
-                                      <button class="btn btn-outline-info button w-100" name="submit" value="Submit" type="submit">Signup</button>
+                                      <button class="btn btn-outline-info button w-100" value="Submit" type="submit">Signup</button>
                                   </div>
                               </form>
                             </div>
