@@ -1,7 +1,7 @@
 <?php
     $db =new mysqli("localhost", "root", "", "uthman");
     if(mysqli_connect_error()) {
-        echo "Wrong connection";
+       // echo "Wrong connection";
     }
     echo "<br>";
 
@@ -45,6 +45,9 @@
     <input type="email" id="text" name="email" placeholder="Email" required><br><br>
     <input type="password" name="password" id="text" placeholder="Password" required><br><br>
     <input type="submit" id="button" value="log in">
+    <p>forgot <a href="">password?</a></p>
+
+    
 </div>
 </form>
 </body>
