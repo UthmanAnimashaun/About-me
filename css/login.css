@@ -5,7 +5,7 @@
 body{
     font-family: tahoma;
     background: #444;
-    animation: rotate 3s linear infinite;
+    
 
 }
  #bar{
@@ -37,30 +37,19 @@ img{
     font-weight: bold;
     font-size: 20px;
     background:-webkit-linear-gradient(30deg, #111,#222, #333, #444, #555, #666, #777, #888, #999);
-    animation: rotate 3s linear infinite;
     color: #999;
     text-align: center;
 
 }
-@keyframes rotate{
-    0%{
-        filter: hue-rotate(0deg);
-    }
-    100%{
-        filter: hue-rotate(360deg);
-    }
-}
-
 #text{
     height: 40px;
     width: 200px;
     border: none;
     outline: none;
     background: transparent;
-    color: cyan;
+    color: #42b72a;
     border-radius: 15px;
     font-size: 18px;
-    
     border-bottom: 2px solid blue;
     text-align: center;
 }
@@ -84,4 +73,11 @@ img{
 #button:hover{
     width: 300px;
     border-color: #42b72a;
+}
+input{
+    background: transparent;
+}
+
+a{ 
+    color: #999;
 }
