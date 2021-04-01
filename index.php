@@ -257,8 +257,8 @@
 
           <!-- Whats Next -->
           <p class="display-6 text-info about-text mt-5">What's Next?</p>
-              <h2>Get In Touch</h2>
-                <form action="" class="form-row get-in-touch-form-body">
+              <h5>Get In Touch on Whatsapp</h5>
+                <form action="https://wa.me/+2348128335797" class="form-row get-in-touch-form-body">
                     <div class="col-lg-6">
                         <label for="">Your Name</label><br>
                         <input type="text" name="your_name" class="get-intouch-form col-lg-6 mb-3  input" placeholder="Your Name" required><br>
