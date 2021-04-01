@@ -1,9 +1,9 @@
 <?php
     $db =new mysqli("localhost", "root", "", "uthman");
     if(mysqli_connect_error()) {
-        echo "Wrong connection";
+        // echo "Wrong connection";
     }
-    echo "<br>";
+    // echo "<br>";
 
     if(isset($_POST['submit'])){
         $first_name=$_POST['first_name'];
@@ -70,17 +70,18 @@
                 <!-- <li class="nav-item">
                   <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li> -->
-    
+              </ul>
+
+              <!-- Login and Sign up page -->
+              <div class="form-group">
                 <!--************************** Register Modal ********************************************-->
-                <li class="nav-item">
-                  <a class="nav-link text-secondary" href="#" tabindex="-1" aria-disabled="true">
+               
                         <!-- Button trigger modal -->
                       <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Signup
                       </button>
     
                       <!-- Modal -->
-    
                       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                           <div class="modal-content">
@@ -89,7 +90,7 @@
                               <button type="button" class="btn-close btn-outline-info" data-bs-dismiss="modal" aria-label="Close">&times;</button>
                             </div>
                             <div class="modal-body  background-modal">
-                              <form action="" method="POST" class="form-row">
+                              <form action="login.php" method="POST" class="form-row">
                                   <label for="">First Name</label>
                                   <input type="text" name="first_name" class="get-intouch-form mb-3 input" placeholder="First Name" required>
                                   <label for="">Last Name</label>
@@ -99,7 +100,7 @@
                                   <label for="">Password</label>
                                   <input type="password" name="password" class="get-intouch-form mb-3 input" placeholder="Password" required>
                                   <div class="modal-button">
-                                      <button class="btn btn-outline-info button w-100" name="submit" type="submit" >Signup</button>
+                                      <button class="btn btn-outline-info button w-100" name="submit" value="Submit" type="submit">Signup</button>
                                   </div>
                               </form>
                             </div>
@@ -111,19 +112,14 @@
                           </div>
                         </div>
                       </div>
-                  </a>
-                </li>
-              </ul>
-              <div class="form-group">
-                <button class="btn btn-outline-info">Login</button>
-              
+                <button class="btn btn-outline-info"><a href="login.php">Login</a></button>
               </div>
             </div>
           </div>
         </nav>
       </header>
-  <main role="main" class="container mt-5">
-      
+
+  <main role="main" class="container mt-5">  
       <div class="starter-template">
         <span class="img-span"><img src="img/refinery.jpg" class="img-center d-block w-auto" alt=""></span>
         <div class="container text-center mb-5 mt-5">
@@ -282,8 +278,6 @@
                         <button class="btn btn-outline-info button" name="submit" type="submit" >Send</button>
                     </div>
                 </form>
-                    
-
   </main>  <!--/.container -->
 
   <footer class="footer">
@@ -312,20 +306,8 @@
 
   </footer>
       
-      
-         
-    <!-- </header> -->
-  
-
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- <script src="">
-      var close=document.getElementsById("#verify");
-      var check=close;
-        if(check==click){
-          alert("are you sure you want to exit?");
-        }
-    </script>  -->
+    <script src="login.js"></script>
+   
 </body>
 </html>
