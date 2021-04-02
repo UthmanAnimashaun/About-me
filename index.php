@@ -249,10 +249,10 @@
                 </div>
                 </div>
             </div>
-            <div class="btn all-button-center mb-5">
+        </div>
+           <div class="btn all-button-center mb-5">
                   <button class="btn btn-outline-info">Know More</button>
             </div>
-        </div>
 
 
           <!-- Whats Next -->
