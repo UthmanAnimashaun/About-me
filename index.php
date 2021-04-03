@@ -153,20 +153,32 @@
            </p>
       <button class="btn btn-outline-info mb-5">Get In Touch</button>
       
+          
+          
+      <!--------------------- Tab navigation --------------------->
+      <div class="container">
+        <div class="tab row">
+          <button class="tablinks active col" onclick="openCity(event,'About')">About</button>
+          <button class="tablinks col" onclick="openCity(event,'Work')">Worked</button>
+          <button class="tablinks col" onclick="openCity(event,'Built')">Projects</button>
+        </div>
+      </div>
+          
       <!-- About Me -->
-      <div class="container about">
-          <p class="display-6 text-info about-text"> About me</p>
+     <div class="container"> 
+      <!-- About Me -->
+        <div id="About" class="tabcontent tabcontent1">
+          <p class="display-6 text-info"> About me</p>
           <p>Hello! I'm Uthman, A Web Developer baesd in Lagos, Ikorodu. <br><br>
-            I enjoy creating Lorem ipsum dolor sit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, consequatur quia? Aut nobis, pariatur aperiam necessitatibus sed natus sequi consequuntur, rerum soluta molestiae cum odio ducimus, id dicta quas et expedita quaerat? Eaque, aperiam repellendus suscipit esse accusantium voluptatem sapiente voluptatibus debitis, placeat quasi magnam quibusdam voluptas neque eum provident nobis? Amet voluptatibus, repellendus quos rerum pariatur unde nihil atque tempore saepe quis nostrum ipsa nesciunt reiciendis expedita assumenda ad autem dolor! Beatae incidunt hic corporis saepe molestiae voluptate velit, natus sint aspernatur error inventore nihil commodi eaque quam optio vitae! Natus id cum repudiandae doloremque neque minus facere provident. 
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores rem numquam accusamus, possimus quidem explicabo libero modi veniam in minima amet odio sapiente, reprehenderit tempora pariatur perferendis. Repellat, accusamus explicabo modi, similique perferendis illo soluta deleniti in nostrum aliquid odit totam tempora nobis ab fugiat, ea molestias facilis. Autem expedita consequatur corrupti amet cum perspiciatis adipisci eum excepturi facere reprehenderit repellendus maiores voluptas inventore temporibus rerum assumenda minima quam, deleniti tempore doloremque ullam a beatae. Modi, praesentium. Sed voluptates nemo quaerat odio. Voluptates similique quam aperiam cum natus hic molestiae. Omnis deserunt maxime architecto libero facere eaque numquam voluptatibus veniam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In neque architecto tenetur dolor sequi voluptate fugit optio molestias laudantium ipsam accusantium nulla aut praesentium non enim, adipisci deserunt nam ratione. Ratione cum suscipit eum explicabo rem ut et mollitia illo nihil consequatur possimus saepe soluta, nesciunt qui accusantium exercitationem debitis.
-        amet Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, doloremque nostrum accusamus molestiae blanditiis numquam exercitationem veritatis iste deserunt, minus esse eveniet, perferendis dolores temporibus aperiam debitis obcaecati animi quidem iusto dolorem saepe consectetur alias. Odio ratione, provident autem non dicta delectus quo laboriosam facere accusantium iste repudiandae pariatur eligendi suscipit illum quaerat officia fugit velit ipsa. Quo velit mollitia nihil illo. Animi, explicabo, voluptatem eaque repudiandae, quaerat iusto nobis ducimus exercitationem alias quae quasi fugiat vero quam veritatis tempora. consectetur adipisicing elit. Impedit culpa sint est dolore ipsam suscipit possimus iusto iste velit amet mollitia pariatur, a ratione consequatur et ipsum nulla unde quaerat hic! Libero eos vel voluptates obcaecati consequatur blanditiis ex numquam.</p>
+            I enjoy creating Lorem ipsum doipisicing elit. Nemo, doloremque nostrum accusamus molestiae blanditiis numquam exercitationem veritatis iste deserunt, minus esse eveniet, perferendis dolores temporibus aperiam debitis obcaecati animi quidem iusto dolorem saepe consectetur alias. Odio ratione, provident autem non dicta delectus quo laboriosam facere accusantium iste repudiandae pariatur eligendi suscipit illum quaerat officia fugit velit ipsa. Quo velit mollitia nihil illo. Animi, explicabo, voluptatem eaque repudiandae, quaerat iusto nobis ducimus exercitationem alias quae quasi fugiat vero quam veritatis tempora. consectetur adipisicing elit. Impedit culpa sint est dolore ipsam suscipit possimus iusto iste velit amet mollitia pariatur, a ratione consequatur et ipsum nulla unde quaerat hic! Libero eos vel voluptates obcaecati consequatur blanditiis ex numquam.</p>
             <div class="btn all-button-center mb-5">
                 <button class="btn btn-outline-info text-center">Know More</button>
             </div>
+        </div>
             
             <!-- WHere I've Worked -->
-          <p class="display-6 text-info about-text">Where I've Worked</p>
+           <div id="Work" class="tabcontent tabcontent2">
+            <p class="display-6 text-info">Where I've Worked</p>
           
               <!-- Cards -->
               <div class="row">
@@ -208,33 +220,35 @@
           <div class="btn all-button-center mb-5">
                 <button class="btn btn-outline-info">Know More</button>
           </div>
+        </div>
 
           <!-- Some Things I've Built  -->
-          <p class="display-6 text-info about-text mb-5">Some Things I've Built</p>
+          <div id="Built" class="tabcontent tabcontent3">
+            <p class="display-6 text-info mb-5">Some Things I've Built</p>
           
-            <!-- 1st Card -->
-         <!-- Cards -->
-         <div class="row">
-            <div class="col mb-3">
-            <div class="card card-img-top" style="width: 18rem;">
-              <img src="img/spacework3.jpg" class="card-img-top" alt="..." >
-              <div class="card-body card-background-color">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-outline-info">Go somewhere</a>
-              </div>
-            </div>
+                <!-- 1st Card -->
+             <!-- Cards -->
+            <div class="row">
+                <div class="col mb-3">
+                <div class="card card-img-top" style="width: 18rem;">
+                  <img src="img/spacework3.jpg" class="card-img-top" alt="..." >
+                  <div class="card-body card-background-color">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-outline-info">Go somewhere</a>
+                  </div>
+                </div>
           </div>
 
             <!-- Second card -->
             <div class="col mb-3">
-            <div class="card" style="width: 18rem;">
-              <img src="img/spacework6.jpg" class="card-img-top" alt="...">
-              <div class="card-body card-background-color">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-outline-info">Go somewhere</a>
-              </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="img/spacework6.jpg" class="card-img-top" alt="...">
+                  <div class="card-body card-background-color">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-outline-info">Go somewhere</a>
+                  </div>
             </div>
           </div>
 
@@ -249,14 +263,15 @@
                 </div>
                 </div>
             </div>
-        </div>
+           </div>
            <div class="btn all-button-center mb-5">
                   <button class="btn btn-outline-info">Know More</button>
             </div>
+        </div>
 
 
           <!-- Whats Next -->
-          <p class="display-6 text-info about-text mt-5">What's Next?</p>
+          <p class="display-6 text-info mt-5">What's Next?</p>
               <h5>Get In Touch on Whatsapp</h5>
                 <form action="https://wa.me/+2348128335797" class="form-row get-in-touch-form-body">
                     <div class="col-lg-6">
@@ -307,7 +322,9 @@
   </footer>
       
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="login.js"></script>
+<!--     <script src="js/login.js"></script> -->
+    <script src="js/main.js"></script>
+
    
 </body>
 </html>
