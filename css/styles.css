@@ -296,6 +296,7 @@ a{
         outline: none;
         cursor: pointer;
         float: left;
+        margin: 1%;
         padding: 14px 16px;
         font-size: 13px;
     }
