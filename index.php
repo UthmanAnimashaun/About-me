@@ -42,11 +42,11 @@
     <header class="container-fluid ">
         <nav class="navbar navbar-expand-lg navbar-light nav-background">
           <div class="container-fluid ">
-            <a class="navbar-brand text-success" href="#">
+            <a class="navbar-brand text-secondary" href="#">
               <img src="img/refinery.jpg" alt="" width="30" height="24" class="d-inline-block align-top">
               Uthman
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -112,7 +112,7 @@
                           </div>
                         </div>
                       </div>
-                <button class="btn btn-outline-info"><a href="login.php">Login</a></button>
+                <button class="btn btn-outline-info"><a href="login.php" style="color: inherit;">Login</a></button>
               </div>
             </div>
           </div>
@@ -155,25 +155,39 @@
       
           
           
+<<<<<<< Updated upstream
       <!--------------------- Tab navigation --------------------->
       <div class="container">
+=======
+    <!--------------------- Tab navigation --------------------->
+    <div class="container">
+>>>>>>> Stashed changes
         <div class="tab row">
           <button class="tablinks active col" onclick="openCity(event,'About')">About</button>
           <button class="tablinks col" onclick="openCity(event,'Work')">Worked</button>
           <button class="tablinks col" onclick="openCity(event,'Built')">Projects</button>
         </div>
       </div>
+<<<<<<< Updated upstream
           
       <!-- About Me -->
      <div class="container"> 
       <!-- About Me -->
+=======
+
+    <div class="container"> 
+      <!-- About Me -->
+>>>>>>> Stashed changes
         <div id="About" class="tabcontent tabcontent1">
           <p class="display-6 text-info"> About me</p>
           <p>Hello! I'm Uthman, A Web Developer baesd in Lagos, Ikorodu. <br><br>
             I enjoy creating Lorem ipsum doipisicing elit. Nemo, doloremque nostrum accusamus molestiae blanditiis numquam exercitationem veritatis iste deserunt, minus esse eveniet, perferendis dolores temporibus aperiam debitis obcaecati animi quidem iusto dolorem saepe consectetur alias. Odio ratione, provident autem non dicta delectus quo laboriosam facere accusantium iste repudiandae pariatur eligendi suscipit illum quaerat officia fugit velit ipsa. Quo velit mollitia nihil illo. Animi, explicabo, voluptatem eaque repudiandae, quaerat iusto nobis ducimus exercitationem alias quae quasi fugiat vero quam veritatis tempora. consectetur adipisicing elit. Impedit culpa sint est dolore ipsam suscipit possimus iusto iste velit amet mollitia pariatur, a ratione consequatur et ipsum nulla unde quaerat hic! Libero eos vel voluptates obcaecati consequatur blanditiis ex numquam.</p>
+<<<<<<< Updated upstream
             <div class="btn all-button-center mb-5">
                 <button class="btn btn-outline-info text-center">Know More</button>
             </div>
+=======
+>>>>>>> Stashed changes
         </div>
             
             <!-- WHere I've Worked -->
@@ -183,14 +197,14 @@
               <!-- Cards -->
               <div class="row">
                 <div class="col mb-3">
-                <div class="card card-img-top" style="width: 18rem;">
-                  <img src="img/spacework3.jpg" class="card-img-top" alt="..." >
-                  <div class="card-body card-background-color">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-outline-info">Go somewhere</a>
+                  <div class="card card-img-top" style="width: 18rem;">
+                    <img src="img/spacework3.jpg" class="card-img-top" alt="..." >
+                    <div class="card-body card-background-color">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-outline-info">Go somewhere</a>
+                    </div>
                   </div>
-                </div>
               </div>
 
                 <!-- Second card -->
@@ -208,18 +222,24 @@
                 <!-- 3rd Card -->
                 <div class="col mb-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/spacework5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body card-background-color">
+                      <img src="img/spacework5.jpg" class="card-img-top" alt="...">
+                      <div class="card-body card-background-color">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="btn btn-outline-info">Go somewhere</a>
-                    </div>
+                      </div>
                     </div>
                 </div>
             </div>
+<<<<<<< Updated upstream
           <div class="btn all-button-center mb-5">
                 <button class="btn btn-outline-info">Know More</button>
           </div>
+=======
+            <div class="btn all-button-center mb-5">
+                  <button class="btn btn-outline-info">Know More</button>
+            </div>
+>>>>>>> Stashed changes
         </div>
 
           <!-- Some Things I've Built  -->
@@ -230,6 +250,7 @@
              <!-- Cards -->
             <div class="row">
                 <div class="col mb-3">
+<<<<<<< Updated upstream
                 <div class="card card-img-top" style="width: 18rem;">
                   <img src="img/spacework3.jpg" class="card-img-top" alt="..." >
                   <div class="card-body card-background-color">
@@ -251,19 +272,47 @@
                   </div>
             </div>
           </div>
+=======
+                  <div class="card card-img-top" style="width: 18rem;">
+                    <img src="img/spacework3.jpg" class="card-img-top" alt="..." >
+                    <div class="card-body card-background-color">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-outline-info">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
 
-            <!-- 3rd Card -->
-            <div class="col mb-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/spacework5.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-background-color">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-outline-info">Go somewhere</a>
+            <!-- Second card -->
+                <div class="col mb-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/spacework6.jpg" class="card-img-top" alt="...">
+                      <div class="card-body card-background-color">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-outline-info">Go somewhere</a>
+                      </div>
                 </div>
+              </div>
+>>>>>>> Stashed changes
+
+                <!-- 3rd Card -->
+                <div class="col mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/spacework5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body card-background-color">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-outline-info">Go somewhere</a>
+                    </div>
+                    </div>
                 </div>
+<<<<<<< Updated upstream
             </div>
            </div>
+=======
+              </div>
+>>>>>>> Stashed changes
            <div class="btn all-button-center mb-5">
                   <button class="btn btn-outline-info">Know More</button>
             </div>

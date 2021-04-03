@@ -6,9 +6,15 @@ body{
     background: #000022;
     color: #555;
 }
+a{
+    text-decoration: none;
+}
 .nav-background{
     background: #222; 
     color: #fff;
+}
+.menu{
+    background: #333;
 }
 .body-of-footer-modal{
     background: #333;
@@ -256,7 +262,16 @@ body{
         color: #00ff00;
     }
  }
+ /*---------------- Tab Navigation start here-------------- */
+ 
+    /* Style the Tab */
+    .tab{
+        overflow: hidden;
+        border: none;
+        background: transparent;
+    }
 
+<<<<<<< Updated upstream
  /*---------------- Tab Navigation start here-------------- */
  
         /* Style the Tab */
@@ -310,6 +325,52 @@ body{
         }
       
  /*---------------- Tab Navigation ends here-------------- */
+=======
+    /* Style the Button inside the tab */
+    
+    .tab button{
+        background: transparent;
+        color: #5bc0de;
+        border: none;
+        border-bottom: 1px solid #00ff00;
+        outline: none;
+        cursor: pointer;
+        float: left;
+        padding: 14px 16px;
+        font-size: 13px;
+    }
+
+    /* change background color of buttons on hover */
+    .tab button:hover{
+        background: #222;
+    }
+
+    /* an active/current tablink class */
+    .tab button.active{
+        background: #333;
+    }
+
+    /*------------ tab content -----------*/
+    .tabcontent2, .tabcontent3{
+        display: none;
+        
+    }
+    .tabcontent{
+        padding: 6px 12px;
+        border: none;
+        animation: fadeEffect 1s;
+    }
+    @keyframes fadeEffect{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+ /*---------------- Tab Navigation ends here-------------- */
+
+>>>>>>> Stashed changes
 
 /* get-intouch-form */
 .get-intouch-form{
