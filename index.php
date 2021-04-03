@@ -151,7 +151,7 @@
       <h1>I build Things for the Web</h1>
       <p class="lead">I'm a Web. Developer baesd in Lagos, Ikorodu specializing in building and designing a Website and everything in between
            </p>
-      <button class="btn btn-outline-info mb-5">Get In Touch</button>
+      <button class="btn btn-outline-info mb-5"><a href="mailto:animashaunua@gmail.com" style="color: inherit;">Get In Touch</a></button>
       
           
           
@@ -182,7 +182,7 @@
                   <div class="card card-img-top" style="width: 18rem;">
                     <img src="img/spacework3.jpg" class="card-img-top" alt="..." >
                     <div class="card-body card-background-color">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">Chemie-Tech</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <a href="#" class="btn btn-outline-info">Go somewhere</a>
                     </div>
@@ -268,8 +268,11 @@
 
           <!-- Whats Next -->
           <p class="display-6 text-info mt-5">What's Next?</p>
-              <h5>Get In Touch on Whatsapp</h5>
-                <form action="https://wa.me/+2348128335797" class="form-row get-in-touch-form-body">
+              <div class="container mb-5">
+                <h3>Get In Touch on Gmail</h3>
+                <p class="lead">If possible you find any bugg on this website, please na <strong class="text-white">God</strong> I used take beg you, send me a message on my Gmail <a href="mailto:animashaunua@gmail.com" class="text-info">here</a></p>
+              </div>
+                <!-- <form action="https://wa.me/+2348128335797" class="form-row get-in-touch-form-body">
                     <div class="col-lg-6">
                         <label for="">Your Name</label><br>
                         <input type="text" name="your_name" class="get-intouch-form col-lg-6 mb-3  input" placeholder="Your Name" required><br>
@@ -288,7 +291,7 @@
                         <div class="get-intouch-form-button mb-5">         
                         <button class="btn btn-outline-info button" name="submit" type="submit" >Send</button>
                     </div>
-                </form>
+                </form> -->
   </main>  <!--/.container -->
 
   <footer class="footer">
