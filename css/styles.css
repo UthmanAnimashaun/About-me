@@ -271,61 +271,6 @@ a{
         background: transparent;
     }
 
-<<<<<<< Updated upstream
- /*---------------- Tab Navigation start here-------------- */
- 
-        /* Style the Tab */
-        .tab{
-            overflow: hidden;
-            border: none;
-            background: #000022;
-        }
-
-        /* Style the Button inside the tab */
-       
-        .tab button{
-            background: transparent;
-            color: #00ff00;
-            border: none;
-            border-bottom: 1px solid #00ff00;
-            outline: none;
-            cursor: pointer;
-            float: left;
-            padding: 14px 16px;
-            font-size: 13px;
-        }
-
-        /* change background color of buttons on hover */
-        .tab button:hover{
-            background: #000055;
-        }
-
-        /* an active/current tablink class */
-        .tab button.active{
-            background: #550055;
-        }
-
-        /*------------ tab content -----------*/
-        .tabcontent2, .tabcontent3{
-            display: none;
-           
-        }
-        .tabcontent{
-            padding: 6px 12px;
-            border: none;
-            animation: fadeEffect 1s;
-        }
-        @keyframes fadeEffect{
-            0%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
-        }
-      
- /*---------------- Tab Navigation ends here-------------- */
-=======
     /* Style the Button inside the tab */
     
     .tab button{
@@ -370,7 +315,6 @@ a{
     }
  /*---------------- Tab Navigation ends here-------------- */
 
->>>>>>> Stashed changes
 
 /* get-intouch-form */
 .get-intouch-form{
