@@ -18,6 +18,24 @@ function openCity(evt, cityName){
     evt.currentTarget.className +=" active";
 
 }
+// Dark Mode
+
+var app = document.getElementsByTagName("BODY")[0];
+// to make it stay either in light mode or darkmode.
+    if(localStorage.lightMode=="dark"){
+        app.setAttribute("darkmode","dark");
+        document.getElementById("switch").checked=true;
+    }
+function darkModes(){
+    if(localStorage.lightMode=="dark"){
+        localStorage.lightMode="light";
+        app.setAttribute("darkmode", "light");
+    }else{
+        localStorage.lightMode="dark";
+        app.setAttribute("darkmode", "dark");
+    }
+    console.log("lightmode="+localStorage.lightMode);
+}
 
 
 

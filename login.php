@@ -36,19 +36,15 @@
 <body>
     <div id="bar">
         <div> <img src="img/refinery.jpg" alt=""> Uthman</div>
-    
     </div>
     
     <form action="index.php" method="POST">
-
-<div id="bar2">Log in<br>
-    <input type="email" id="text" name="email" placeholder="Email" required><br><br>
-    <input type="password" name="password" id="text" placeholder="Password" required><br><br>
-    <input type="submit" id="button" value="log in">
-    <p>forgot <a href="">password?</a></p>
-
-    
-</div>
+    <div id="bar2">Log in<br>
+        <input type="email" id="text" name="email" placeholder="Email" required><br><br>
+        <input type="password" name="password" id="text" placeholder="Password" required><br><br>
+        <input type="submit" id="button" value="log in">
+        <p>forgot <a href="">password?</a></p>  
+    </div>
 </form>
 </body>
 </html>
