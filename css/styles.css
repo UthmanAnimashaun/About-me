@@ -5,7 +5,11 @@
 body{
     background: #000022;
     color: #555;
-    animation: body linear 3s;
+    animation: body linear 2s;
+}
+
+a{
+    text-decoration: none;
 }
 @keyframes body{
     0%{
@@ -15,8 +19,64 @@ body{
         opacity: 1;
     }
 }
-a{
-    text-decoration: none;
+/* Logo Start here*/
+
+.logo a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: #444;
+    text-align: center;
+    line-height: 36px;
+    font-size: 24px;
+    /* color: #00ff00; */
+    box-shadow: 2px 2px 2px #444;
+    border-radius: 50%;
+    border: 2px solid rgb(59, 89, 152);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Logo ends here */
+.darkmode{
+    background: #777;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 2px #333;
+}
+.right{
+    width: auto;
+    color: #fff;
+    writing-mode: vertical-rl;
+    margin: 10px;
+    top: 55%;
+    padding: 10px;
+    position: absolute ;
+    animation: arrow 1s linear infinite;
+}
+.left{
+    width: auto;
+    color: #fff;
+    writing-mode: vertical-lr;
+    margin: 10px;
+    top: 55%;
+    right: 0px;
+    padding: 10px;
+    position:absolute;
+    float: right;
+    animation: arrow 1s linear infinite;
+}
+@keyframes arrow{
+    0%{
+        top: 45%;
+    }
+    50%{
+        top: 50%;
+    }
+    100%{
+        top: 45%;
+    }
 }
 .nav-background{
     background: #222; 
@@ -35,8 +95,13 @@ a{
     background: #444;
     color: #00ff00;
 }
-.card-background-color{
-    background: #000044;
+
+#card-background-color{
+    background-color: transparent;
+}
+.card-shadow{
+    box-shadow: 3px 3px 3px;
+    /* border: 1px solid; */
 }
 
 /* Top center Image and Text */
@@ -260,20 +325,17 @@ a{
     0%{
         bottom: 0px;
         left: 0px;
-        color: #00ff00;
         opacity: 0;
     }
    
     50%{
         bottom: 10px;
         left: 10px;
-        color: #00ff00;
         opacity: 0.5;
     }
     100%{
         left: 0px;
         bottom: 0px;
-        color: #00ff00;
         opacity: 1;
     }
  }
@@ -281,7 +343,7 @@ a{
  
     /* Style the Tab */
     .tab{
-        overflow: hidden;
+        overflow-x: auto;
         border: none;
         background: transparent;
     }
@@ -312,9 +374,9 @@ a{
     }
 
     /*------------ tab content -----------*/
-    .tabcontent2, .tabcontent3{
+    .tabcontent3, .tabcontent4, .tabcontent5{
         display: none;
-        
+       
     }
     .tabcontent{
         padding: 6px 12px;
@@ -366,3 +428,155 @@ a{
     margin: auto;
     /* margin-right: 40px; */
 }
+
+ /*---------------- SKills start here-------------- */
+
+ .imglogo{
+    height: 20px;
+    width: 20px;
+    float: left;
+}
+ .langskill{
+    display: inline-flex;
+}
+
+.web{
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: skyblue;
+    display: inline-flex;
+    margin: 0 5px 0 5px;
+
+}
+.en2{
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: #666;
+    display: inline-flex;
+    margin: 0 5px 0 5px;
+
+}
+
+
+/* Skills
+
+For FASHION DESIGNER*/
+
+
+.fa{
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: skyblue;
+    display: inline-flex;
+    margin: 0 5px 0 5px;
+
+}
+.en2{
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: #666;
+    display: inline-flex;
+    margin: 0 5px 0 5px;
+
+}
+
+
+
+/* Skills
+
+For CRANE OPERATOR*/
+
+
+.cr{
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: skyblue;
+    display: inline-flex;
+    margin: 0 5px 0 5px;
+
+}
+.en2{
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: #666;
+    display: inline-flex;
+    margin: 0 5px 0 5px;
+
+}
+ /*---------------- SKills endz here-------------- */
+
+
+
+/* Dark mode */
+/* Dark mode */
+body[darkmode="dark"]{
+    background: #e9ebee;
+    color: black;
+}
+
+body[darkmode="dark"] .nav-background{
+    background: rgb(59, 89, 152);
+    color: aliceblue;
+}
+body[darkmode="dark"] .right,
+body[darkmode="dark"] .left{
+    color: black;
+}
+body[darkmode="dark"] .background-modal{
+    background: transparent;
+}
+body[darkmode="dark"] .head-of-modal,
+body[darkmode="dark"] .body-of-footer-modal{
+    background-color: rgb(59, 89, 152);
+    color: aliceblue;
+}
+body[darkmode="dark"] .get-intouch-form{
+    border: 2px solid transparent;
+}
+body[darkmode="dark"] .footer{
+    background-color: rgb(59, 89, 152);
+    color: aliceblue;
+ }
+body[darkmode="dark"] .span-txt1, .span-txt2, .span-txt3, .span-txt4, .span-txt5, .span-txt6, .span-txt7, .span-txt8, .span-txt9, .span-txt10, .span-txt11, .span-txt12, .span-txt13, .span-txt14, .span-txt15, .span-txt16, .span-txt17, .span-txt18, .span-txt19, .span-txt20, .span-txt21, .span-txt22, .span-txt23, .span-txt24:before,
+body[darkmode="dark"] .span-txt1, .span-txt2, .span-txt3, .span-txt4, .span-txt5, .span-txt6, .span-txt7, .span-txt8, .span-txt9, .span-txt10, .span-txt11, .span-txt12, .span-txt13, .span-txt14, .span-txt15, .span-txt16, .span-txt17, .span-txt18, .span-txt19, .span-txt20, .span-txt21, .span-txt22, .span-txt23, .span-txt24:after{
+    -webkit-text-stroke:  rgb(59, 89, 152);
+}
+body[darkmode="dark"] .img-span:before,
+body[darkmode="dark"] .img-span:after{
+    border-bottom: 2px solid rgb(59, 89, 152);
+}
+body[darkmode="dark"] .tab button{
+    border-bottom: 1px solid rgb(59, 89, 152);
+    color: black;
+}
+body[darkmode="dark"] .tab button:hover{
+    background: aliceblue;
+    color: black;
+}
+body[darkmode="dark"] .tab button.active{
+    background: rgb(221, 223, 224);
+    color: black;
+}
+
+body[darkmode="dark"] .menu{
+    background: rgb(221, 223, 224)
+}
+body[darkmode="dark"] .logo a{
+    color: #fff;
+    border: 2px solid #00ff00;
+    box-shadow: 2px 2px 2px #444 ;
+
+
+}
+
+
+
+
+/* Dark mode */
+/* Dark mode */
