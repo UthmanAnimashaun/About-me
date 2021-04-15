@@ -457,7 +457,7 @@
           </div>
           
           <div class="col mb-3 mt-3">
-              <a href="https://wa.me/+2348128335797">
+              <a href="https://wa.me/+2348128335797"> 
               <img src="img/whatsapp.jpg" class="span1" alt="">
               </a> 
           </div>
