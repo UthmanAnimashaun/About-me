@@ -22,10 +22,6 @@
 ?>
 
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,18 +47,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item ">
-                  <a class="nav-link active text-secondary" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active menu-text" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-secondary" href="#">About</a>
+                  <a class="nav-link menu-text" href="#">About</a>
                 </li>
                 <li class="nav-item dropdown ">
-                  <a class="nav-link text-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link menu-text dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Projects
                   </a>
                   <ul class="dropdown-menu nav-background dropdown-outline-info" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item text-secondary" href="Phonebook/phonbk.html">Phonebook Search</a></li>
-                    <li><a class="dropdown-item text-secondary" href="solar-system/solar-system.html">Solar System</a></li>
+                    <li><a class="dropdown-item menu-text" href="Phonebook/phonbk.html">Phonebook Search</a></li>
+                    <li><a class="dropdown-item menu-text" href="solar-system/solar-system.html">Solar System</a></li>
                     <!-- <li><a class="dropdown-item" href="#">Contact Me</a></li> -->
                   </ul>
                 </li>
@@ -76,7 +72,7 @@
                 <!--************************** Register Modal ********************************************-->
                
                         <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <button type="button" class="btn btn-outline-secondary sign-login-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Signup
                       </button>
     
@@ -104,8 +100,8 @@
                               </form>
                             </div>
                             <div class="modal-footer body-of-footer-modal">
-                              <button type="button" id="verify" class="btn btn-outline-success button-of-footer-modal"  data-bs-dismiss="modal">Close</button>
-                              <button type="button" id="verify" class="btn btn-outline-success button-of-footer-modal">Save Changes</button>
+                              <button type="button" id="verify" class="btn btn-outline-light button-of-footer-modal"  data-bs-dismiss="modal">Close</button>
+                              <button type="button" id="verify" class="btn btn-outline-light button-of-footer-modal">Save Changes</button>
                               <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                            </div>
                           </div>
@@ -114,11 +110,11 @@
                   </a>
                 </li>
               </ul>
-                <button class="btn btn-outline-info"><a href="login.php" style="color: inherit;">Login</a></button>
+                <button class="btn btn-outline-secondary sign-login-btn"><a href="login.html" style="color: inherit;">Login</a></button>
                 <form class="d-flex">
                 <div class="custom-control custom-switch" style="padding-top: 5px;">
                   <input type="checkbox" class="custom-control-input" id="switch" onclick="darkModes()">
-                  <label for="switch" class="custom-control-label">Light Mode</label>
+                  <label for="switch" class="custom-control-label light-mode-check">Light Mode</label>
                   <!-- <button type="button" class="darkmode" onclick="darkMode()">Dark/Light Mode</button> -->
                 </div>
               </form>
@@ -128,9 +124,9 @@
       </header>
 
         <!-- -------------------Content----------------- -->
-        <p class="left">scorll down &RightArrow;</p>
-      <p class="right">scorll down &rightarrow;</p>
-  <main role="main" class="container mt-5">  
+        <p class="left">scroll down &RightArrow;</p>
+      <p class="right">scroll down &rightarrow;</p>
+  <main role="main" class="container">  
       <div class="starter-template">
         <span class="img-span"><img src="img/uthman icon.png" class="img-center d-block w-auto" alt=""></span>
         <div class="container text-center mb-5 mt-5">
@@ -324,7 +320,7 @@
                     <P class="web"></P>
                     <P class="web"></P>
                     <P class="web"></P>
-                    <P class="en2"></P>
+                    <P class="web"></P>
                     <P class="en2"></P>
                     <P class="en2"></P>
                   </div><br>
@@ -332,7 +328,7 @@
     
                 <!----------------- Javascript ---------------->
                 
-                <label>Javascript</label><br>
+                <label>JAVASCRIPT</label><br>
                 <div class="langskill">
                     <P class="web"></P>
                     <P class="web"></P>
@@ -356,13 +352,25 @@
                   </div><br>
                 <!----------------- PHP ends---------------->
     
-                <!----------------- JQuery ---------------->
+                <!----------------- BOOTSTRAP ---------------->
                 
-                <label>JQuery</label><br>
+                <label>BOOTSTRAP</label><br>
                 <div class="langskill">
+                    <P class="web"></P>
+                    <P class="web"></P>
+                    <P class="web"></P>
                     <P class="web"></P>
                     <P class="en2"></P>
                     <P class="en2"></P>
+                  </div><br>
+                <!----------------- BOOTSTRAP ends---------------->
+    
+                <!----------------- JQuery ---------------->
+                
+                <label>JQUERY</label><br>
+                <div class="langskill">
+                    <P class="web"></P>
+                    <P class="web"></P>
                     <P class="en2"></P>
                     <P class="en2"></P>
                     <P class="en2"></P>
@@ -370,14 +378,27 @@
                   </div><br>
                 <!----------------- JQuery ends---------------->
     
+                <!----------------- REACT JS ---------------->
+                
+                <label>REACT JS</label><br>
+                <div class="langskill">
+                    <P class="web"></P>
+                    <P class="web"></P>
+                    <P class="en2"></P>
+                    <P class="en2"></P>
+                    <P class="en2"></P>
+                    <P class="en2"></P>
+                  </div><br>
+                <!----------------- REACT JS ends---------------->
+    
                 <!----------------- GITHUB ---------------->
                 
                 <label>GITHUB</label><br>
                 <div class="langskill">
                     <P class="web"></P>
                     <P class="web"></P>
-                    <P class="en2"></P>
-                    <P class="en2"></P>
+                    <P class="web"></P>
+                    <P class="web"></P>
                     <P class="en2"></P>
                     <P class="en2"></P>
                   </div><br>
@@ -387,6 +408,8 @@
                 
                 <label>HEROKU</label><br>
                 <div class="langskill">
+                    <P class="web"></P>
+                    <P class="web"></P>
                     <P class="web"></P>
                     <P class="web"></P>
                     <P class="en2"></P>
@@ -407,7 +430,7 @@
             <div class="card card-shadow" id="card-background-color" style="width: 18rem;">
               <div class="card-body">
                 <h6>Fashion/Operator</h6>
-                <label>Fashion Designer</label><br>
+                <label>FASHION DESIGNER</label><br>
                 <div class="langskill">
                 
                     <P class="fa"></P>
@@ -421,7 +444,7 @@
     
                <!--Skills 
                 For Operator-->
-               <label>Crane Operator</label><br>
+               <label>CRANE OPERATOR</label><br>
                 <div class="langskill">
                 
                     <P class="cr"></P>
@@ -442,7 +465,7 @@
           <p class="display-6 about-text mt-5">What's Next?</p>
             <div class="container mb-5">
               <h2>Get In Touch</h2>
-              <p class="lead">If possible you find any bugg on this website, please na <strong><i>God</i></strong> I used take beg you, send me a message on my Gmail <a href="mailto:animashaunua@gmail.com" class="text-info">here</a></p>
+              <p class="lead">If possible you find any bugg on this website, please na <strong><i>God</i></strong> I used take beg you, send me a message on my Gmail <a href="mailto:animashaunua@gmail.com" class="text-info footer-mail-link">here</a></p>
             </div>
             </div>
           </div>       <!-- closing of  Stater-template -->
@@ -457,7 +480,7 @@
           </div>
           
           <div class="col mb-3 mt-3">
-              <a href="https://wa.me/+2348128335797"> 
+              <a href="https://wa.me/+2348128335797">
               <img src="img/whatsapp.jpg" class="span1" alt="">
               </a> 
           </div>
@@ -471,6 +494,7 @@
           </div>
        </div>
         <p class="lead"> &copy; Designed & Built By Uthman Animashaun</p>
+  
     </footer>
         
       <script src="js/bootstrap.bundle.min.js"></script>
