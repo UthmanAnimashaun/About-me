@@ -29,7 +29,7 @@
                   <ul class="dropdown-menu nav-background text-center dropdown-outline-info" aria-labelledby="navbarDropdown">
 
                     <li>
-                      <a class="dropdown-item menu-text"style="color: inherit;" href="Phonebook/phonbk.html">
+                      <a class="dropdown-item menu-text" href="Phonebook/phonbk.html">
                         <i class="nav-icon fas fa-book"></i>
                            Phonebook Search
                       </a>
