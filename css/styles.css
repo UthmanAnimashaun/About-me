@@ -4,24 +4,54 @@
 }
 body{
     background: #000022;
+    font: 400 15px lato, sans-serif;
     color: #555;
     animation: body linear 2s;
+    line-height: 1.8;
 }
 
-a{
+a, .tablinks{
     text-decoration: none;
-    color: #00ff00;
+    color: #f4511e;
+    /* color: #f1356d; */
 }
 @keyframes body{
     0%{
-        opacity: 0;
+        opacity: 0.5;
     }
     100%{
         opacity: 1;
     }
 }
 /* Logo Start here*/
-
+.slideanim {
+    visibility: hidden;
+}
+.slide {
+    animation: slide 1s linear;
+    -webkit-animation: slide 1s linear;
+    visibility: visible;
+}
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide{
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
 .logo a{
     display: inline-block;
     height: 40px;
@@ -45,7 +75,7 @@ a{
     color: aliceblue;
 }
 .light-mode-check{
-    color: #777;
+    color: aliceblue !important;
 }
 
 /* Arrows start here */
@@ -105,16 +135,19 @@ a{
 #card-background-color{
     background-color: transparent;
 }
-.card-shadow{
-    box-shadow: 3px 3px 3px;
-}
 
 /* Top center Image and Text */
 .img-span{
     display: flex;
     flex-direction: row;
 }
-.img-span:before, .img-span:after{
+.img-span:before{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #00ff00;
+    margin: auto;
+ }
+ .img-span:after{
     content: "";
     flex: 1 1;
     border-bottom: 2px solid #00ff00;
@@ -359,7 +392,6 @@ a{
         background: transparent;
         color: #5bc0de;
         border: none;
-        border-bottom: 1px solid #00ff00;
         outline: none;
         cursor: pointer;
         float: left;
@@ -371,6 +403,7 @@ a{
     /* change background color of buttons on hover */
     .tab button:hover{
         background: #222;
+        border-bottom: 1px solid #00ff00;
     }
 
     /* an active/current tablink class */
@@ -414,8 +447,11 @@ a{
     text-align: center;
 }
 /* Footer */
-.footer{
+footer{
     text-align: center;
+}
+footer .fas {
+    color: #444;
 }
 /* Footer Social Media Logo */
 .span1{
@@ -455,57 +491,6 @@ a{
     margin: 0 5px 0 5px;
 
 }
-
-
-/* Skills
-
-For FASHION DESIGNER*/
-
-
-.fa{
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    background: skyblue;
-    display: inline-flex;
-    margin: 0 5px 0 5px;
-
-}
-.en2{
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    background: #666;
-    display: inline-flex;
-    margin: 0 5px 0 5px;
-
-}
-
-
-
-/* Skills
-
-For CRANE OPERATOR*/
-
-
-.cr{
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    background: skyblue;
-    display: inline-flex;
-    margin: 0 5px 0 5px;
-
-}
-.en2{
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    background: #666;
-    display: inline-flex;
-    margin: 0 5px 0 5px;
-
-}
  /*---------------- SKills endz here-------------- */
 
 
@@ -513,21 +498,27 @@ For CRANE OPERATOR*/
 /* Light mode */
 /* Light mode */
 body[darkmode="dark"]{
-    background: #e9ebee;
+    background: #f2f2f2;
     color: black;
 }
 
 body[darkmode="dark"] .nav-background{
-    background: rgb(59, 89, 152);
-    color: aliceblue;
+    /* background: rgb(59, 89, 152); */
+    background: #f4511e;
+    color: #818181;
+}
+body[darkmode="dark"] .logo a{
+    background-color: #f4511e;
+    color: #fff;
+    border: 2px solid #f2f2f2;
+    box-shadow: 2px 2px 2px #444 ;
 }
 body[darkmode="dark"] .sign-login-btn{
     border: 1px solid;
     outline:rgb(221, 223, 224);
     color: aliceblue;
 }
-body[darkmode="dark"] .right,
-body[darkmode="dark"] .left{
+body[darkmode="dark"] .right, .left{
     color: black;
 }
 body[darkmode="dark"] .light-mode-check{
@@ -536,9 +527,8 @@ body[darkmode="dark"] .light-mode-check{
 body[darkmode="dark"] .background-modal{
     background: transparent;
 }
-body[darkmode="dark"] .head-of-modal,
-body[darkmode="dark"] .body-of-footer-modal{
-    background-color: rgb(59, 89, 152);
+body[darkmode="dark"] .head-of-modal, .body-of-footer-modal{
+    background-color: #f4511e;
     color: aliceblue;
 }
 body[darkmode="dark"] .get-intouch-form{
@@ -548,47 +538,42 @@ body[darkmode="dark"] label{
     color: black;
 }
 body[darkmode="dark"] .tab button{
-    border-bottom: 1px solid rgb(59, 89, 152);
     color: black;
 }
 body[darkmode="dark"] .tab button:hover{
-    background: aliceblue;
-    color: black;
+    border-bottom: 1px solid #e68c71;
+    background: #f4511e;
+    color: aliceblue;
 }
 body[darkmode="dark"] .tab button.active{
-    background: rgb(221, 223, 224);
-    color: black;
+    border-bottom: 1px solid #f4511e;
+    background: #f4511e;
+    color: aliceblue;
 }
 
 body[darkmode="dark"] .menu{
     background: rgb(221, 223, 224)
 }
-body[darkmode="dark"] .logo a{
-    background-color: rgb(59, 89, 152);
-    color: #fff;
-    border: 2px solid #00ff00;
-    box-shadow: 2px 2px 2px #444 ;
-}
-
 
 body[darkmode="dark"] .nav-link{
     color: #fff !important;
 }
 body[darkmode="dark"] .span-txt1, .span-txt2, .span-txt3, .span-txt4, .span-txt5, .span-txt6, .span-txt7, .span-txt8, .span-txt9, .span-txt10, .span-txt11, .span-txt12, .span-txt13, .span-txt14, .span-txt15, .span-txt16, .span-txt17, .span-txt18, .span-txt19, .span-txt20, .span-txt21, .span-txt22, .span-txt23, .span-txt24:before,
-body[darkmode="dark"] .span-txt1, .span-txt2, .span-txt3, .span-txt4, .span-txt5, .span-txt6, .span-txt7, .span-txt8, .span-txt9, .span-txt10, .span-txt11, .span-txt12, .span-txt13, .span-txt14, .span-txt15, .span-txt16, .span-txt17, .span-txt18, .span-txt19, .span-txt20, .span-txt21, .span-txt22, .span-txt23, .span-txt24:after{
-    -webkit-text-stroke:  rgb(59, 89, 152);
+body[darkmode="dark"] .span-txt1, .span-txt2, .span-txt3, .span-txt4, .span-txt5, .span-txt6, .span-txt7, .span-txt8, .span-txt9, .span-txt10, .span-txt11, .span-txt12, .span-txt13, .span-txt14, .span-txt15, .span-txt16, .span-txt17, .span-txt18, .span-txt19, .span-txt20, .span-txt21, .span-txt22:after, .span-txt23:after, .span-txt24:after{
+    -webkit-text-stroke:  #f4511e;
 }
-body[darkmode="dark"] .img-span:before,
-body[darkmode="dark"] .img-span:after{
-    border-bottom: 2px solid rgb(59, 89, 152);
+body[darkmode="dark"] .img-span:before, .img-span:after{
+    border-bottom: 2px solid #f4511e;
 }
-body[darkmode="dark"] .footer{
-    background-color: rgb(59, 89, 152);
+body[darkmode="dark"] footer{
+    background-color: #f4511e;
     color: aliceblue;
  }
 body[darkmode="dark"] .footer-mail-link{
-    color: blue !important;
+    color: #f4511e !important;
 }
-
+body[darkmode="dark"] footer a, .light-mode-check{
+    color: aliceblue !important;
+}
 /* Light mode */
 /* Dark mode */

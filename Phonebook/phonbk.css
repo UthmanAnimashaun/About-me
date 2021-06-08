@@ -18,6 +18,9 @@ body{
     animation: animate 3s linear infinite;
 
 }
+code {
+    color: grey;
+}
 .back-to-home-button a{
     text-decoration: none;
     list-style-type: none;

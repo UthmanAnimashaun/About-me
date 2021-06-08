@@ -1,26 +1,10 @@
 <?php
-    $db =new mysqli("localhost", "root", "", "uthman");
-    if(mysqli_connect_error()) {
-        // echo "Wrong connection";
-    }
-    // echo "<br>";
+   include ("./db.php");
 
-    if(isset($_POST['submit'])){
-        $first_name=$_POST['first_name'];
-        $last_name=$_POST['last_name'];
-        $email=$_POST['email'];
-        $password=$_POST['password'];
-        
-        // send to DB Table
-        $insert="insert into navbar_signup values('', '".$first_name."', '".$last_name."', '".$email."', '".$password."')";
+   include ("./insertdata.php");
 
-        $q=$db->query($insert);
-        if($q){
-            echo "Signup Successfully";
-        }
-    }
+   
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,102 +17,18 @@
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="icon" href="img/refinery.jpg">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./fontawesome-free/css/all.css">
 </head>
-<body>   
-    <header class="container-fluid ">
-        <nav class="navbar navbar-expand-lg navbar-light nav-background">
-          <div class="container-fluid ">
-          <div class="logo">
-            <a>U</a>
-          </div>
-          <button class="navbar-toggler menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item ">
-                  <a class="nav-link active menu-text" aria-current="page" href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link menu-text" href="#">About</a>
-                </li>
-                <li class="nav-item dropdown ">
-                  <a class="nav-link menu-text dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Projects
-                  </a>
-                  <ul class="dropdown-menu nav-background dropdown-outline-info" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item menu-text" href="Phonebook/phonbk.html">Phonebook Search</a></li>
-                    <li><a class="dropdown-item menu-text" href="solar-system/solar-system.html">Solar System</a></li>
-                    <!-- <li><a class="dropdown-item" href="#">Contact Me</a></li> -->
-                  </ul>
-                </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li> -->
-              </ul>
-
-              <!-- Login and Sign up page -->
-              <!-- <div class="form-group"> -->
-                <!--************************** Register Modal ********************************************-->
-               
-                        <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-outline-secondary sign-login-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Signup
-                      </button>
-    
-                      <!-- Modal -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header text-center head-of-modal">
-                              <h5 class="modal-title " id="exampleModalLabel">Signup</h5>
-                              <button type="button" class="btn-close btn-outline-info" data-bs-dismiss="modal" aria-label="Close">&times;</button>
-                            </div>
-                            <div class="modal-body  background-modal">
-                              <form action="login.php" method="POST" class="form-row">
-                                  <label for="">First Name</label>
-                                  <input type="text" name="first_name" class="get-intouch-form mb-3 input card-shadow" placeholder="First Name" required>
-                                  <label for="">Last Name</label>
-                                  <input type="text" name="last_name" class="get-intouch-form mb-3 input card-shadow" placeholder="Last Name" required>
-                                  <label for="">Email</label>
-                                  <input type="email" name="email" class="get-intouch-form mb-3 input card-shadow" placeholder="Email" required>
-                                  <label for="">Password</label>
-                                  <input type="password" name="password" class="get-intouch-form mb-3 input card-shadow" placeholder="Password" required>
-                                  <div class="modal-button">
-                                      <button class="btn btn-outline-info button w-100 card-shadow" value="Submit" type="submit">Signup</button>
-                                  </div>
-                              </form>
-                            </div>
-                            <div class="modal-footer body-of-footer-modal">
-                              <button type="button" id="verify" class="btn btn-outline-light button-of-footer-modal"  data-bs-dismiss="modal">Close</button>
-                              <button type="button" id="verify" class="btn btn-outline-light button-of-footer-modal">Save Changes</button>
-                              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                           </div>
-                          </div>
-                        </div>
-                      </div>
-                  </a>
-                </li>
-              </ul>
-                <button class="btn btn-outline-secondary sign-login-btn"><a href="login.html" style="color: inherit;">Login</a></button>
-                <form class="d-flex">
-                <div class="custom-control custom-switch" style="padding-top: 5px;">
-                  <input type="checkbox" class="custom-control-input" id="switch" onclick="darkModes()">
-                  <label for="switch" class="custom-control-label light-mode-check">Light Mode</label>
-                  <!-- <button type="button" class="darkmode" onclick="darkMode()">Dark/Light Mode</button> -->
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </header>
-
+<body  id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">   
+  <!-- -----------------------Header Starts here -->
+    <?php include ("./navbar.php") ?>
+  <!-- -----------------------Header Ends here -->
         <!-- -------------------Content----------------- -->
         <p class="left">scroll down &RightArrow;</p>
       <p class="right">scroll down &rightarrow;</p>
   <main role="main" class="container">  
       <div class="starter-template">
-        <span class="img-span"><img src="img/uthman icon.png" class="img-center d-block w-auto" alt=""></span>
+        <span class="img-span slideanim"><img src="img/uthman icon.png" class="img-center d-block w-auto" alt=""></span>
         <div class="container text-center mb-5 mt-5">
             <span class="span-txt1 lead">W</span>
             <span class="span-txt2 lead">E</span>
@@ -155,10 +55,14 @@
             <span class="span-txt23 lead">T</span>
             <span class="span-txt24 lead">E</span>
           </div>
-          <h1>I build Things for the Web</h1>
-      <p class="lead">I'm a Web. Developer baesd in Lagos, Ikorodu specializing in building and designing a Website and everything in between
-           </p>
-      <button class="btn card-shadow mb-5">Get In Touch</button>
+
+          <div class="slideanim">
+
+              <h1>I build Things for the Web</h1>
+              <p class="lead">I'm a Web Developer based in Lagos, Ikorodu specialize in building and designing a Website and everything in between
+                </p>
+                <button class="btn shadow mb-5"><a href="mailto:animashaunua@gmail.com">Get In Touch</a></button>
+          </div>
       
 
       <!--------------------- Tab navigation --------------------->
@@ -172,59 +76,52 @@
         </div>
       </div>
 
-    <div class="container"> 
-      <!-- About Me -->
-        <!-- <div id="About" class="tabcontent tabcontent1">
-          <p class="display-6 mt-3 mb-3"> About me</p>
-          <p>Hello! I'm Uthman, A Web Developer baesd in Lagos, Ikorodu. <br><br>
-            I enjoy creating tiis ex numquam.</p>
-        </div> -->
-
-            
+    <div class="container">          
             <!-- WHere I've Worked -->
         <div id="Work" class="tabcontent tabcontent1">
           <p class="display-6 mt-3 mb-3">Where I've Worked</p>
           
               <!-- Cards -->
-              <div class="row">
-                <div class="col mb-3">
-                <div class="card card-img-top card-shadow" id="card-background-color" style="width: 18rem;">
-                  <img src="img/chemietech2.jpg" class="card-img-top" alt="..." >
-                  <div class="card-body card-background-color">
-                    <h5 class="card-title">Chemie-Tech</h5>
-                    <p class="card-text"><b>Designation:</b> Assistance/Helper</p>
-                    <p class="card-text"><b>Category:</b> Painting and Blasting</p>
-                    <a href="https://www.chemietech.com" class="btn card-shadow">Know More</a>
-                  </div>
-                </div>
-              </div>
+              <div class="row mb-3 shadow slideanim">
 
-                <!-- Second card -->
-                <div class="col mb-3">
-                <div class="card card-img-top card-shadow" id="card-background-color" style="width: 18rem;">
-                  <img src="img/lsmtl.jpg" class="card-img-top" alt="...">
-                  <div class="card-body card-background-color">
-                    <h5 class="card-title">Lagost State Material Testing (LSMTL)</h5>
-                    <p class="card-text"><b>Designation:</b> Assistance/Helper</p>
-                    <p class="card-text"><b>Category:</b> Crusher/Testing</p>
-                    <a href="https://www.lsmtl.lagosstate.gov.ng" class="btn card-shadow">Know More</a>
-                  </div>
+                <div class="col-sm-12 col-md-6" id="card-background-color">
+                  <img src="img/chemietech2.jpg" class="card-img-top" alt="..." >
                 </div>
-              </div>
-            </div>
-          
-        </div>
+
+                <div class="col-sm-12 col-md-6 mt-4 text-center">
+                  <h5 class="card-title">Chemie-Tech</h5>
+                  <p class="card-text"><b>Designation:</b> Assistance/Helper</p>
+                  <p class="card-text"><b>Category:</b> Painting and Blasting</p>
+                  <a href="https://www.chemietech.com" class="btn shadow">Know More</a>
+                </div>
+              </div>  <!--   End of Row-->
+      
+                <!-- Second card -->
+                <div class="row mb-3 shadow slideanim">
+
+                    <div class="col-sm-12 col-md-6" id="card-background-color">
+                      <img src="img/lsmtl.jpg" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 mt-4 text-center">
+                      <h5 class="card-title">Lagost State Material Testing (LSMTL)</h5>
+                      <p class="card-text"><b>Designation:</b> Assistance/Helper</p>
+                      <p class="card-text"><b>Category:</b> Crusher/Testing</p>
+                      <a href="https://lsmtl.lagosstate.gov.ng" class="btn shadow">Know More</a>
+                    </div>
+              </div>  <!--   End of Row-->
+        </div>  <!--   End of Tab-->
 
 
           <!-- Some Things I've Built  -->
-      <div id="Education" class="tabcontent tabcontent3">
+      <div id="Education" class="tabcontent slideanim tabcontent3">
           <p class="display-6 mt-3 mb-3">Education</p>
           
           <!-- Cards -->
             <!-- 1st Card -->
-          <div class="row">
+          <div class="row slideanim">
             <div class="col mb-3">
-            <div class="card card-shadow" id="card-background-color" style="width: 18rem;">
+            <div class="card shadow" id="card-background-color" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="card-title">Lagos State Polytechnic Ikorodu(LASPOTECH)</h5>
                 <p class="card-text"><b>Program:</b> ND</p>
@@ -236,7 +133,7 @@
 
             <!-- Second card -->
               <div class="col mb-3">
-              <div class="card card-shadow" id="card-background-color" style="width: 18rem;">
+              <div class="card shadow" id="card-background-color" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Community High School Akodo</h5>
                   <p class="card-text"><b>Program:</b> High School</p>
@@ -248,7 +145,7 @@
 
             <!-- 3rd Card -->
               <div class="col mb-3">
-              <div class="card card-shadow" id="card-background-color" style="width: 18rem;">
+              <div class="card shadow" id="card-background-color" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Ishaga Close Nur/Pry School</h5>
                   <p class="card-text"><b>Program:</b> Primary</p>
@@ -268,13 +165,13 @@
         
         <!-- Cards -->
           <!-- 1st Card -->
-        <div class="row">
+        <div class="row slideanim">
           <div class="col mb-3">
-            <div class="card card-shadow" id="card-background-color" style="width: 18rem;">
+            <div class="card shadow" id="card-background-color" style="width: 18rem;">
               <div class="card-body">
                 <p class="pbold">Contact</p>
 
-                <img src="img/call.png" class="imglogo">
+                <span class="glyph"></span><img src="img/call.png" class="imglogo">
                 <p class="call">+2347017815158</p>
                 
                 <img src="img/whatsapp.jpg" class="imglogo">
@@ -294,9 +191,9 @@
         
         <!-- Cards -->
           <!-- 1st Card -->
-        <div class="row">
+        <div class="row slideanim">
           <div class="col mb-3">
-            <div class="card card-shadow" id="card-background-color" style="width: 18rem;">
+            <div class="card shadow" id="card-background-color" style="width: 18rem;">
               <div class="card-body">
                 <!-- For Web -->
                 <h6>Web Development</h6><br>
@@ -427,16 +324,16 @@
                   <!-- Cards -->
           <!-- 1st Card -->
           <div class="col mb-3">
-            <div class="card card-shadow" id="card-background-color" style="width: 18rem;">
+            <div class="card shadow" id="card-background-color" style="width: 18rem;">
               <div class="card-body">
                 <h6>Fashion/Operator</h6>
                 <label>FASHION DESIGNER</label><br>
                 <div class="langskill">
                 
-                    <P class="fa"></P>
-                    <P class="fa"></P>
-                    <P class="fa"></P>
-                    <P class="fa"></P>
+                    <P class="web"></P>
+                    <P class="web"></P>
+                    <P class="web"></P>
+                    <P class="web"></P>
                     <P class="en2"></P>
                     <P class="en2"></P>
                   </div><br>
@@ -447,9 +344,9 @@
                <label>CRANE OPERATOR</label><br>
                 <div class="langskill">
                 
-                    <P class="cr"></P>
-                    <P class="cr"></P>
-                    <P class="cr"></P>
+                    <P class="web"></P>
+                    <P class="web"></P>
+                    <P class="web"></P>
                     <P class="en2"></P>
                     <P class="en2"></P>
                     <P class="en2"></P>
@@ -462,8 +359,8 @@
               
 
           <!-- Whats Next -->
-          <p class="display-6 about-text mt-5">What's Next?</p>
-            <div class="container mb-5">
+          <div class="container slideanim mb-5">
+              <p class="display-6 about-text mt-5">What's Next?</p>
               <h2>Get In Touch</h2>
               <p class="lead">If possible you find any bugg on this website, please na <strong><i>God</i></strong> I used take beg you, send me a message on my Gmail <a href="mailto:animashaunua@gmail.com" class="text-info footer-mail-link">here</a></p>
             </div>
@@ -471,32 +368,13 @@
           </div>       <!-- closing of  Stater-template -->
               
   </main>  <!--/.container -->
-  <footer class="footer mt-5">
-    <div class="row">
-          <div class="col mb-3 mt-3">
-         <a href="https://www.instagram.com/animashaun_uthman_akorede">
-         <img src="img/ig.jpg" class="span1" alt="">
-         </a> 
-          </div>
-          
-          <div class="col mb-3 mt-3">
-              <a href="https://wa.me/+2348128335797">
-              <img src="img/whatsapp.jpg" class="span1" alt="">
-              </a> 
-          </div>
-          
-          <div class="col mb-3 mt-3">
-               <img src="img/twitter.png" class="span1" alt="">
-          </div>
-          
-          <div class="col mb-3 mt-3">
-            <a href="https://www.facebook.com/monikkaa23"><img src="img/facebook.jpg" class="span1" alt=""></a>
-          </div>
-       </div>
-        <p class="lead"> &copy; Designed & Built By Uthman Animashaun</p>
-  
-    </footer>
+ 
+ <!-- Footer Starts here -->
+  <?php include ("./footer.php") ?>
+ <!-- Footer Ends here -->
         
+      <script src="js/jquery.js"></script>
+      <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="login.js"></script>
       <script src="js/main.js"></script>
