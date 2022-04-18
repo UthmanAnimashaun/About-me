@@ -1,0 +1,222 @@
+/*
+color: #f4511e; //light
+color: #24a8e6; //dark
+*/
+
+body[darkmode="dark"] {
+    background: #f2f2f2;
+    color: #555;
+}
+
+body[darkmode="dark"] {
+    background: #f2f2f2;
+    color: #555;
+}
+
+
+/* scrollbar */
+
+body[darkmode="dark"] body::-webkit-scrollbar-track {
+    background: #fff;
+    /* color of the tracking area */
+}
+
+body[darkmode="dark"]::-webkit-scrollbar-thumb {
+    background-color: #f4511e;
+    /* color of the scroll thumb */
+}
+
+body[darkmode="dark"] .light {
+    color: #f4511e !important;
+}
+
+body[darkmode="dark"] .bglight {
+    background: #f4511e;
+    color: #fff;
+}
+
+body[darkmode="dark"] .bggray {
+    background: #ccc;
+    /* color: #fff; */
+}
+
+body[darkmode="dark"] .current {
+    background: #f4511e;
+    color: #fff;
+}
+
+body[darkmode="dark"] .dlight {
+    background: white;
+    /* color: #fff; */
+}
+
+body[darkmode="dark"] .nav-background {
+    /* background: rgb(59, 89, 152); */
+    background: #f4511e;
+    color: #818181;
+}
+
+body[darkmode="dark"] .logo a {
+    background-color: #f4511e;
+    color: #fff;
+    border: 2px solid #f2f2f2;
+    box-shadow: 2px 2px 2px #444;
+}
+
+
+/* toggle button */
+
+body[darkmode="dark"] .menu {
+    background: transparent
+}
+
+body[darkmode="dark"] .nav-link {
+    color: #fff !important;
+}
+
+body[darkmode="dark"] .dropdown-menu>li>a:hover {
+    color: #000 !important;
+    background: transparent;
+}
+
+
+/* slider switch */
+
+body[darkmode="dark"] .slider {
+    background: #f4511e !important;
+}
+
+body[darkmode="dark"] .slider {
+    border: 1px solid #fff;
+    background-color: #f4511e;
+}
+
+body[darkmode="dark"] .slider:before {
+    /* background-color: #f4511e; */
+    background-color: #fff;
+}
+
+body[darkmode="dark"] input:checked+.slider {
+    /* background-color: #75a4ca; */
+    background-color: #f4511e;
+}
+
+body[darkmode="dark"] input:focus+.slider {
+    /* box-shadow: 0 0 1px #2196F3; */
+    box-shadow: 0 0 1px #f4511e;
+}
+
+
+/* Menu Button */
+
+body[darkmode="dark"] .menu_btn1 {
+    background: #fff;
+}
+
+body[darkmode="dark"] .menu_btn2 {
+    background: #fff;
+}
+
+body[darkmode="dark"] .menu_btn3 {
+    background: #fff;
+}
+
+
+/* Menu button ends here */
+
+
+/* body[darkmode="dark"] .right {
+    color: black;
+}
+
+body[darkmode="dark"] .left {
+    color: black;
+} */
+
+body[darkmode="dark"] .light-mode-check {
+    color: aliceblue;
+}
+
+body[darkmode="dark"] .get-intouch-form {
+    border: 2px solid transparent;
+}
+
+body[darkmode="dark"] label {
+    color: black;
+}
+
+body[darkmode="dark"] .tab button {
+    color: inherit;
+}
+
+body[darkmode="dark"] .tab button:hover {
+    border: 1px solid #f4511e;
+}
+
+body[darkmode="dark"] .tab button.active {
+    border: 1px solid #f4511e;
+    color: #f4511e;
+}
+
+
+/* get_in_touch btn*/
+
+body[darkmode="dark"] .get_in_touch button {
+    border: 1px solid #f4511e;
+}
+
+body[darkmode="dark"] .aa {
+    border: 1px solid #f4511e;
+}
+
+body[darkmode="dark"] .get_in_touch a {
+    color: #f4511e;
+}
+
+body[darkmode="dark"] .get_in_touch button:hover {
+    background: #f4511e;
+    color: white;
+}
+
+body[darkmode="dark"] .get_in_touch a:hover {
+    color: white;
+}
+
+
+/* My Image */
+
+body[darkmode="dark"] .img-span:before {
+    border-bottom: 2px solid #f4511e;
+}
+
+body[darkmode="dark"] .animate span {
+    color: #555;
+}
+
+body[darkmode="dark"] .img-span:after {
+    border-bottom: 2px solid #f4511e;
+}
+
+body[darkmode="dark"] footer {
+    background-color: #f4511e;
+    color: aliceblue;
+}
+
+body[darkmode="dark"] .footer-mail-link {
+    color: #f4511e !important;
+}
+
+body[darkmode="dark"] footer a,
+.light-mode-check {
+    color: aliceblue !important;
+}
+
+
+/* Languages */
+
+body[darkmode="dark"] .outerc {
+    stroke: #f4511e;
+}
+
+
+/* Light mode */
